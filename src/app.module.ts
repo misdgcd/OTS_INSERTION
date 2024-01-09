@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { SoHeaderModule } from './so-header/so-header.module';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -20,7 +21,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       trustServerCertificate: true
     }
   
-  })]
+  }), SoHeaderModule]
   ,
   controllers: [AppController],
   providers: [AppService],

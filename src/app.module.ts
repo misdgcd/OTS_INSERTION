@@ -13,7 +13,7 @@ import { SoHeaderModule } from './so-header/so-header.module';
     password: 'p@ssw0rd',
     database: 'OTS_DB',
     autoLoadEntities: true,
-    synchronize: true,
+    synchronize: false,
     logging: true,
 
     options: {
